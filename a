@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>誕生日</title>
+    <style>
+        .message {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>四月朔日 鼓梅へ</h1>
+    <label for="birthday">誕生日はいつなの？(MMDD):</label>
+    <input type="date" id="birthday" name="birthday">
+    <button onclick="checkBirthday()">確認</button>
+    <div id="message" class="message"></div>
+
+    <script>
+        function checkBirthday() {
+            const birthdayInput = document.getElementById('birthday').value;
+            const messageDiv = document.getElementById('message');
+
+            // 指定した誕生日 
+            const specifiedBirthday = '0802';
+
+            if (birthdayInput === specifiedBirthday) {
+                messageDiv.innerHTML = 'お誕生日おめでとうございます！🎉';
+            } else {
+                messageDiv.innerHTML = 'ちげええよおおおぉぉぉぉぉ！！！！！';
+            }
+        }
+    </script>
+</body>
+</html>
