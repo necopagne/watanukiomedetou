@@ -13,7 +13,7 @@
 </head>
 <body>
     <h1>四月朔日 鼓梅へ</h1>
-    <label for="birthday">誕生日はいつなの？(MMDD):</label>
+    <label for="birthday">誕生日はいつなの？</label>
     <input type="date" id="birthday" name="birthday">
     <button onclick="checkBirthday()">確認</button>
     <div id="message" class="message"></div>
@@ -24,7 +24,7 @@
             const messageDiv = document.getElementById('message');
 
             // 指定した誕生日 
-            const specifiedBirthday = '0802';
+            const specifiedBirthday = '2000-08-02';
 
             if (birthdayInput === specifiedBirthday) {
                 messageDiv.innerHTML = 'お誕生日おめでとうございます！🎉';
